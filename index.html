@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davut | Yazılım Geliştirici & Özgeçmiş</title>
+    <meta name="description" content="Davut'un kişisel web sitesi ve özgeçmişi. Yetenekler, projeler ve iletişim bilgileri.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
+
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <a href="#" class="logo">Davut <span>Örs</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">Hakkımda</a></li>
+                <li><a href="#skills">Yetenekler</a></li>
+                <li><a href="#resume">Özgeçmiş</a></li>
+                <li><a href="#projects">Projeler</a></li>
+                <li><a href="#contact" class="btn-primary">İletişime Geç</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <span class="badge">Bandırma Onyedi Eylül Üniversitesi</span>
+                <h1 class="animate-up">Merhaba, ben <span class="highlight">Davut Örs</span></h1>
+                <p class="subtitle animate-up delay-1">Bilgisayar Mühendisliği öğrencisi. Yenilikçi teknolojileri öğrenmeye hevesli, problem çözme odaklı yazılım geliştirici stajyer adayı.</p>
+                <div class="hero-actions animate-up delay-2">
+                    <a href="#resume" class="btn-secondary">Özgeçmiş (CV)</a>
+                    <a href="#contact" class="btn-primary">Birlikte Çalışalım</a>
+                </div>
+            </div>
+            <div class="hero-image-container animate-fade-in">
+                <svg class="profile-img" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" style="background: var(--background-card); backdrop-filter: blur(10px);">
+                    <defs>
+                        <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#3b82f6" />
+                            <stop offset="100%" stop-color="#22d3ee" />
+                        </linearGradient>
+                        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                            <feGaussianBlur stdDeviation="15" result="blur" />
+                            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                        </filter>
+                    </defs>
+                    <!-- Glowing Bracket Left -->
+                    <path d="M 155 130 L 85 200 L 155 270" fill="none" stroke="url(#logoGrad)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)" opacity="0.6"/>
+                    <path d="M 155 130 L 85 200 L 155 270" fill="none" stroke="url(#logoGrad)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+                    
+                    <!-- The Letter D -->
+                    <path d="M 195 130 L 235 130 C 285 130 315 165 315 200 C 315 235 285 270 235 270 L 195 270 Z" fill="none" stroke="#f8fafc" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M 195 130 L 195 270" fill="none" stroke="#f8fafc" stroke-width="24" stroke-linecap="round" />
+                </svg>
+            </div>
+        </section>
+
+        <section id="about" class="about reveal">
+            <div class="section-header">
+                <h2>Hakkımda</h2>
+                <div class="line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Bandırma Onyedi Eylül Üniversitesi Bilgisayar Mühendisliği öğrencisi olarak, teknik çözüm üretme ve topluluk liderliği konularında aktif rol alıyorum.</p>
+                    <p>Huawei Student Developers (HSD) bünyesinde üstlendiğim yönetim sorumluluklarıyla organizasyonel becerilerimi geliştirirken; C++, veri yapıları ve full-stack web geliştirme projeleriyle mühendislik pratiklerimi güçlendiriyorum. Problem çözme odaklı, ekip çalışmasına yatkın ve yenilikçi teknolojileri öğrenmeye hevesli bir stajyer adayıyım.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>HSD</h3>
+                            <p>Başkan Yrd.</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>B1</h3>
+                            <p>İngilizce</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills reveal">
+            <div class="section-header">
+                <h2>Yetenekler & Teknolojiler</h2>
+                <div class="line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3>Programlama Dilleri</h3>
+                    <p>C++, C, JavaScript, SQL. Temel ve ileri düzey programlama prensipleri, veri ve performans optimizasyonu.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🌐</div>
+                    <h3>Web Teknolojileri</h3>
+                    <p>HTML5, CSS3, Node.js, Firebase. Uçtan uca web uygulamaları, veritabanı entegrasyonu ve dinamik arayüzler.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🛠️</div>
+                    <h3>Araçlar & Disiplinler</h3>
+                    <p>Git, GitHub, Veri Yapıları, Nesne Yönelimli Programlama (OOP) Sistematiği ve takım çalışması dinamikleri.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="resume reveal">
+            <div class="section-header">
+                <h2>Özgeçmiş</h2>
+                <div class="line"></div>
+            </div>
+            <div class="resume-container">
+                <div class="timeline">
+                    <h3 class="timeline-title"><span class="icon">💼</span> Deneyimler</h3>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Ocak 2026 - Halen</div>
+                        <h4>Sponsorluk ve Organizasyon Komitesi Başkan Yrd.</h4>
+                        <h5>Huawei Student Developers (HSD) Bandırma</h5>
+                        <ul style="list-style-type: disc; margin-left: 1rem; margin-top: 1rem;">
+                            <li style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0.5rem">Komite yapısının yeniden yapılandırılması süreçlerine liderlik ederek daha verimli çalışma ortamı oluşturulması.</li>
+                            <li style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0.5rem">Sektör paydaşlarıyla iletişim kurarak etkinlikler için sponsorluk ve iş birliği süreçlerinin yönetimi.</li>
+                            <li style="color: var(--text-muted); font-size: 0.95rem;">Yazılım atölyeleri ve "Game Night" gibi sosyal etkinliklerin tüm operasyonel planlaması.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline">
+                    <h3 class="timeline-title"><span class="icon">🎓</span> Eğitim</h3>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2024 - Devam Ediyor</div>
+                        <h4>Bilgisayar Mühendisliği</h4>
+                        <h5>Bandırma Onyedi Eylül Üniversitesi</h5>
+                        <ul style="list-style-type: disc; margin-left: 1rem; margin-top: 1rem;">
+                            <li style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0.5rem">Yazılım geliştirme, veri yapıları ve algoritma tasarımı teorik ve pratik eğitimi.</li>
+                            <li style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0.5rem">HSD Bandırma çatısı altında teknik workshop mutfaklarında aktif katılım.</li>
+                            <li style="color: var(--text-muted); font-size: 0.95rem;">Veritabanı yönetimi ve OOP derslerinde uygulamalı proje geliştirme.</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2019 - 2023</div>
+                        <h4>Fen Lisesi</h4>
+                        <h5>Şereflikoçhisar Yavuz Sultan Selim Fen Lisesi</h5>
+                        <p style="margin-top: 1rem; color: var(--text-muted); font-size: 0.95rem;">Sayısal odaklı eğitim ve analitik problem çözme temeli.</p>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 4rem;" id="cv-download-section">
+                <a href="Davut_Ors_CV.pdf" download="Davut_Ors_CV.pdf" id="downloadPdfBtn" class="btn-primary large" style="text-decoration: none; border: none; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; font-family: 'Inter', sans-serif;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    CV'yi İndir (PDF)
+                </a>
+            </div>
+        </section>
+
+        <section id="projects" class="resume reveal">
+            <div class="section-header">
+                <h2>Projeler</h2>
+                <div class="line"></div>
+            </div>
+            <div class="resume-container">
+                <div class="timeline-item" style="margin-bottom: 0;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 1rem;">
+                        <h3 style="font-size: 1.4rem; color: var(--text-color); margin: 0; font-family: 'Outfit', sans-serif;">Hayat Ağı - Deprem Yönetim Uygulaması</h3>
+                        <span class="badge" style="margin-bottom: 0; background: rgba(220, 38, 38, 0.1); color: #ef4444; border-color: rgba(220, 38, 38, 0.2);">HSD Code4Future Ideathon 3.lüğü</span>
+                    </div>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 1rem;"><strong>Açıklama:</strong> Afet yönetimi süreçlerini dijitalleştiren ve hızlandıran yenilikçi bir çözüm projesi.</p>
+                    <p style="color: var(--text-muted); font-size: 1rem;"><strong>Rol:</strong> "Schrödinger'in Pisileri" takımı ile fikir geliştirme ve sunum aşamalarında görev alarak yarışmada 3.lük elde ettik.</p>
+                </div>
+
+                <div class="timeline-item" style="margin-bottom: 0;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 1rem;">
+                        <h3 style="font-size: 1.4rem; color: var(--text-color); margin: 0; font-family: 'Outfit', sans-serif;">Üniversite Değerlendirme Platformu</h3>
+                        <span class="badge" style="margin-bottom: 0;">Full-Stack Web Uygulaması</span>
+                    </div>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 1rem;"><strong>Detay:</strong> Kullanıcıların üniversite ve bölümler hakkında yorum yapabildiği, veri tabanı entegrasyonuna sahip uçtan uca bir web uygulaması geliştiriliyor.</p>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <span style="padding: 0.3rem 1rem; background: rgba(255,255,255,0.05); border-radius: 20px; font-size: 0.85rem; color: var(--primary-color);">Node.js</span>
+                        <span style="padding: 0.3rem 1rem; background: rgba(255,255,255,0.05); border-radius: 20px; font-size: 0.85rem; color: var(--primary-color);">Firebase</span>
+                        <span style="padding: 0.3rem 1rem; background: rgba(255,255,255,0.05); border-radius: 20px; font-size: 0.85rem; color: var(--primary-color);">HTML/CSS/JS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact reveal">
+            <div class="section-header">
+                <h2>İletişime Geç</h2>
+                <div class="line"></div>
+            </div>
+            <div class="contact-content glass-card">
+                <p style="margin-bottom: 2rem;">Yeni bir projede görev almak, fikir alışverişinde bulunmak veya detaylı CV'm için iletişime geçin.</p>
+                
+                <div style="display: flex; justify-content: center; gap: 3rem; margin-bottom: 3rem; flex-wrap: wrap;">
+                    <div style="display: flex; align-items: center; gap: 1rem; color: var(--text-color);">
+                        <div style="font-size: 1.5rem;">📧</div>
+                        <div style="text-align: left;">
+                            <div style="font-size: 0.85rem; color: var(--text-muted);">E-posta</div>
+                            <div style="font-weight: 500;">davutors12@gmail.com</div>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 1rem; color: var(--text-color);">
+                        <div style="font-size: 1.5rem;"></div>
+                        <div style="text-align: left;">
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 1rem; color: var(--text-color);">
+                        <div style="font-size: 1.5rem;">📍</div>
+                        <div style="text-align: left;">
+                            <div style="font-size: 0.85rem; color: var(--text-muted);">Konum</div>
+                            <div style="font-weight: 500;">Balıkesir</div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="mailto:davutors12@gmail.com?subject=İletişim%20Talebi:%20Kişisel%20Web%20Sitesi" class="btn-primary large">Bana E-posta Gönder</a>
+                <div class="social-links" style="margin-top: 2rem;">
+                    <a href="https://www.linkedin.com/in/davut-%C3%B6rs-3700a4340/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://github.com/Davut722" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Davut Örs. Tüm hakları saklıdır. GitHub üzerine dağıtılmaya hazır.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
