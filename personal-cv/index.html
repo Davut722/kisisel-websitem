@@ -16,7 +16,7 @@
 
     <nav class="glass-nav">
         <div class="nav-content">
-            <a href="#" class="logo">D<span>.</span></a>
+            <a href="#" class="logo">Davut <span>Örs</span></a>
             <ul class="nav-links">
                 <li><a href="#about">Hakkımda</a></li>
                 <li><a href="#skills">Yetenekler</a></li>
@@ -39,7 +39,25 @@
                 </div>
             </div>
             <div class="hero-image-container animate-fade-in">
-                <img src="profile_avatar.png" alt="Davut Profil Resmi" id="profileImage" class="profile-img">
+                <svg class="profile-img" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" style="background: var(--background-card); backdrop-filter: blur(10px);">
+                    <defs>
+                        <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#3b82f6" />
+                            <stop offset="100%" stop-color="#22d3ee" />
+                        </linearGradient>
+                        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                            <feGaussianBlur stdDeviation="15" result="blur" />
+                            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                        </filter>
+                    </defs>
+                    <!-- Glowing Bracket Left -->
+                    <path d="M 155 130 L 85 200 L 155 270" fill="none" stroke="url(#logoGrad)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)" opacity="0.6"/>
+                    <path d="M 155 130 L 85 200 L 155 270" fill="none" stroke="url(#logoGrad)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+                    
+                    <!-- The Letter D -->
+                    <path d="M 195 130 L 235 130 C 285 130 315 165 315 200 C 315 235 285 270 235 270 L 195 270 Z" fill="none" stroke="#f8fafc" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M 195 130 L 195 270" fill="none" stroke="#f8fafc" stroke-width="24" stroke-linecap="round" />
+                </svg>
             </div>
         </section>
 
@@ -188,10 +206,8 @@
                         </div>
                     </div>
                     <div style="display: flex; align-items: center; gap: 1rem; color: var(--text-color);">
-                        <div style="font-size: 1.5rem;">📱</div>
+                        <div style="font-size: 1.5rem;"></div>
                         <div style="text-align: left;">
-                            <div style="font-size: 0.85rem; color: var(--text-muted);">Telefon</div>
-                            <div style="font-weight: 500;">0546 850 68 17</div>
                         </div>
                     </div>
                     <div style="display: flex; align-items: center; gap: 1rem; color: var(--text-color);">
