@@ -1,0 +1,38 @@
+{
+  "name": "nextween",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Next.js starter for animated sites: GSAP, ScrollTrigger, Lenis, Tailwind v4 and Sass, with Claude Code skills built in.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build --webpack",
+    "start": "next start",
+    "lint": "eslint",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "gsap": "^3.15.0",
+    "lenis": "^1.3.26",
+    "next": "16.3.8",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "16.3.8",
+    "prettier": "^3.9.9",
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "sass": "^1.105.1",
+    "tailwindcss": "^4"
+  },
+  "allowScripts": {
+    "@parcel/watcher": false,
+    "unrs-resolver": false
+  }
+}

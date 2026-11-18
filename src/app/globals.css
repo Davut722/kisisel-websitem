@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* Design tokens. Each one becomes a utility: bg-background, text-foreground, bg-accent, ... */
+@theme {
+  --color-background: #09090b;
+  --color-surface: #121216;
+  --color-border: #27272a;
+  --color-foreground: #fafafa;
+  --color-muted: #a1a1aa;
+  --color-accent: #c8ff00;
+  --color-accent-foreground: #09090b;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  overflow-x: clip;
+}

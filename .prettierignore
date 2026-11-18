@@ -1,0 +1,4 @@
+# Third-party skills, kept as published (managed by skills-lock.json)
+.claude/skills/gsap-*/
+.claude/skills/vercel-react-best-practices/
+.claude/skills/web-design-guidelines/
